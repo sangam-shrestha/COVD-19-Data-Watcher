@@ -1,6 +1,6 @@
 # Map the data!
 #plot cases by county for each variant
-jpeg(file="maps/i-cases.jpeg")
+jpeg(file="Maps/i-cases.jpeg")
 plot_usmap( #initial cases
   data = a.data, values = "i.cases", include = c("NM"), color = "red"
 ) + 
