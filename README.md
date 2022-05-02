@@ -1,5 +1,5 @@
 # COVD-19-Data-Watcher
-This R program pulls data from the New York Times GitHub page and creates maps for different COVID-19 variants.<br/>
+This R program pulls data from the New York Times GitHub page and creates maps for different COVID-19 variants. It also conducts spatial regression to show if there are differences between the variants in New Mexico.<br/>
 This is made for a class taken at UNM.
 
 Data sources:<br/>
