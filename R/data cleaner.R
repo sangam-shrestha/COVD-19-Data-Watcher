@@ -68,4 +68,4 @@ a.data <- data.frame(a.data)
 a.data <- na.omit(a.data)
 
 #clean up
-rm("temp", "alpha.data", "case.alpha", "case.delta", "case.initial", "case.omicron", "delta.data", "initial.data", "nm.counties.pop", "omicron.data")
+rm("alpha.data", "case.alpha", "case.delta", "case.initial", "case.omicron", "delta.data", "initial.data", "nm.counties.pop", "omicron.data", "df_list")
