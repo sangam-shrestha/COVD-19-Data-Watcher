@@ -6,6 +6,9 @@ us.counties.2021 <- read.csv("Data/us-counties-2021.csv")
 us.counties.2022 <- read.csv("Data/us-counties-2022.csv")
 nm.counties.pop <- read_excel("Data/counties-pop.xlsx")
 
+#get shapefile for NM
+nm <- as_Spatial(counties('NM'))
+
 #merge all data
 all.data <- rbind(us.counties.2020, us.counties.2021, us.counties.2022)
 count(all.data, vars="state")

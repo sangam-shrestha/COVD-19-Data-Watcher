@@ -69,3 +69,11 @@ a.data <- na.omit(a.data)
 
 #clean up
 rm("alpha.data", "case.alpha", "case.delta", "case.initial", "case.omicron", "delta.data", "initial.data", "nm.counties.pop", "omicron.data", "df_list")
+
+#setup fips in a.data to match with the NM shapefile 
+a.data$fip <- a.data$fips
+a.data$fip <- as.character(sprintf("%03d",a.data$fip-35000))
+
+#merge the shapefile with data frame
+c.data <- merge(nm, a.data, by.x="COUNTYFP", by.y="fip")
+rm("nm")
